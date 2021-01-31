@@ -1,8 +1,8 @@
-name: Create release from semver tag
+name: Create release from tag
 
 on:
   push:
-    tags: 
+    tags:
       - v*
 
 jobs:
