@@ -29,7 +29,7 @@ jobs:
       - name: Get tag message and save it to file
         run: git show ${{ github.ref }} | tail -n +5 | sed '/commit /Q' > body_file.txt
       
-      - name: Create Release
+      - name: Create release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
